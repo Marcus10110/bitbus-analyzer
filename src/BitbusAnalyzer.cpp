@@ -128,7 +128,6 @@ void BitbusAnalyzer::WorkerThread()
 	// Main loop
 	for ( ; ; )
 	{
-		try {
 		ProcessBITBUSFrame();
 		DBG("Committing frames");
 		CommitFrames();
@@ -138,11 +137,8 @@ void BitbusAnalyzer::WorkerThread()
 		mResults->CommitResults();
 		DBG("Reporting progress");
 		ReportProgress ( mBitbus->GetSampleNumber() );
-		} catch (...) {
-		}
 		DBG("Check for exit");
 		CheckIfThreadShouldExit();
-
 	}
 
 }
