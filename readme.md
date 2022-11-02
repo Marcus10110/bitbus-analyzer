@@ -1,5 +1,7 @@
 # Bitbus Protocol Analyzer Plugin for Saleae Logic Software
 
+This analyzer supports a bit-synchronous subset of the IBM SDLC and HDLC protocol.
+
 Originally created by PowerD Industries.
 
 Documentation for the Saleae Logic Analyzer SDK can be found here:
